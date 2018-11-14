@@ -48,5 +48,3 @@ func (bpt *Bcrypt) Sign(signingString string, key interface{}) (string, error) {
 func (bpt *Bcrypt) Alg() string {
 	return bpt.Name
 }
-
-var Bcrypter = &Bcrypt{Name: "bcrypt"}
